@@ -1,0 +1,312 @@
+.pl-3, .px-3
+    padding-left: 1rem !important
+
+.bg-blue
+    background-color: #49d2fd !important
+    color: #000 !important
+    border-color: #49d2fd !important
+
+button, a
+    transition: all ease .3s
+    &:hover
+        opacity: .7
+
+    &:active
+        transform: scale(.98)
+
+.w-50
+    width: 50% !important
+
+.small, small
+    font-size: 80%
+    font-weight: 400
+
+:root
+    --lighter: #fff
+    --first: #fff
+    --second: rgba(255, 255, 255, .7)
+    --bg: #161b20
+
+@media (min-width: 700px) and (max-width: 900px)
+    .md\:gap-24
+        gap: 2rem
+
+@media (min-width: 900px)
+    .md\:gap-24
+        gap: 6rem
+
+.text-muted
+    color: #6c757d !important
+    line-height: 100%
+    margin-top: 10px
+
+.w-75
+    width: 75% !important
+
+.align-items-center
+    -ms-flex-align: center !important
+    align-items: center !important
+
+.justify-content
+    &-center
+        justify-content: center !important
+    &-end
+        justify-content: flex-end !important
+
+.d-flex
+    display: -ms-flexbox !important
+    display: flex !important
+
+.col
+    -ms-flex-preferred-size: 0
+    flex-basis: 0
+    -ms-flex-positive: 1
+    flex-grow: 1
+    max-width: 100%
+
+.buy-token
+    width: 100%
+    justify-content: space-between
+    button
+        background-color: #512fd9
+        width: 49%
+        min-height: 45px
+        color: #fff
+        padding: 11px 15px
+        font-size: 14px
+        line-height: 22px
+        font-weight: 500
+        border-radius: 4px
+        cursor: pointer
+        &:hover
+            opacity: .8
+
+    @media screen and ( max-width: 700px )
+        width: 86% !important
+        button
+            font-size: 14px
+            min-height: 50px
+            line-height: 110%
+            margin: 0 !important
+            // padding-left: 0
+            // padding-right: 0
+            &:last-of-type
+                margin-left: .5rem !important
+
+.max-w-md
+    max-width: 38rem
+
+.right_ban
+    width: 500px
+    max-width: 100%
+
+.detail
+    &_card
+        padding: 30px
+        box-sizing: border-box
+        width: 100%
+        border-radius: 6px
+        background: hsla(0, 0%, 100%, .04)
+        -webkit-backdrop-filter: blur(21px)
+        backdrop-filter: blur(21px)
+        padding: 20px 
+
+        .allocation
+            display: grid
+            grid-template-columns: auto auto
+            grid-gap: 10px
+            justify-content: space-between
+            align-items: center
+            &>div
+                // display: grid
+                // align-items: end
+                &:nth-child(2)
+                    text-align: right
+
+            p
+                font-size: 14px
+                line-height: 15px
+                font-weight: 500 !important
+                // color: var(--first)
+                margin-bottom: 0
+                text-align: left
+
+            h3
+                font-weight: 700
+                font-size: 36px
+                line-height: 40px
+                letter-spacing: .02em
+                color: var(--lighter)
+                text-align: left
+                margin: 0
+
+            .status-p
+                font-size: 12px
+                font-weight: 400 !important
+                line-height: 18px
+                // margin-top: 20px
+
+            .rts
+                h3
+                    font-size: 20px
+                    line-height: 20px
+                    margin: 0
+                    color: var(--first)
+
+        .prog_bar
+            padding: 15px 0 0
+            &_grd
+                display: flex
+                justify-content: space-between
+                margin-top: 0
+                margin-bottom: 14px
+
+            span
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 14px
+                text-transform: capitalize
+                color: var(--first)
+
+        span.prog._percent
+            width: 100%
+            display: flex
+            font-size: 14px
+            color: var(--first)
+
+            p
+                font-size: 12px
+                opacity: .5
+                margin-right: 6px
+                margin-bottom: 0
+
+        &_outer
+
+            position: relative
+            p
+                color: var(--second) !important
+           
+
+        @media screen and ( max-width: 700px )
+            .allocation
+                margin-top: 10px
+                p
+                    font-size: 14px
+                    line-height: 100%
+                h3
+                    font-size: 26px
+                    line-height: 100%
+                    margin-top: 5px
+
+                .rts
+                    h3
+                        font-size: 16px
+
+            .prog_bar
+                span
+                    font-size: 12px
+                    line-height: 13px
+                &_grd
+                    a
+                        font-size: 12px
+
+                    &.w-50
+                        width: 65% !important
+
+.progressbar
+    padding: 1px
+    width: 100%
+    border: 2px solid var(--second)
+    position: relative
+    height: 27px
+    border-radius: 50px
+    margin-top: 10px
+    margin-bottom: 10px
+
+#myBar
+    background: #512fd9
+    border-radius: 50px
+    height: 21px
+    text-align: center
+
+label
+    font-size: 14px
+    color: var(--first)
+    display: inline-block
+    margin-bottom: .5rem
+    @media screen and ( max-width: 700px )
+        font-size: 12px
+
+.buy-btnbtc
+    display: flex
+    justify-content: space-between
+
+.prog_bar_grd
+    .parti
+        width: 100%
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        text-transform: capitalize
+        color: var(--first)
+        text-align: right
+        margin: 10px 0 0
+        p
+            font-size: 12px
+            opacity: .5
+            color: var(--first)
+            margin-right: 6px
+            margin-bottom: 0
+            
+
+.input-custom
+    display: block
+    height: 40px
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    letter-spacing: .02em
+    color: #512fd9
+    background: rgba(255, 255, 255, .1)
+    border: 1px solid var(--second)
+    border-radius: 4px
+    padding: 0 10px
+    margin-right: 10px
+    outline: 0
+
+    @media screen and ( max-width: 700px )
+        margin-right: 5px
+        font-size: 14px
+        letter-spacing: 0
+
+.tit_le2
+    h3
+        font-style: normal
+        font-weight: 700
+        font-size: 24px
+        line-height: 33px
+        color: #fff
+        margin: 0 0 0 5px
+        letter-spacing: 0
+        display: flex
+        justify-content: space-between
+        span
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 100%
+            letter-spacing: .02em
+            color: #fff
+            background: rgba(#512fd9, .08)
+            border: 1px solid #fff
+            border-right: none
+            border-radius: 2px
+            padding: 11px 11px 10px
+            margin-right: -20px
+            margin-top: 5px
+            // border-radius: 50px 0 0 50px
+
+            @media screen and ( max-width: 700px )
+                font-size: 14px
