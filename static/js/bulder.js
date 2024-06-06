@@ -68,9 +68,9 @@ function createBlock(data) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('cont');
+    container.innerHTML = '';
     data.forEach(e => {
         const blockHtml = createBlock(e);
-        container.insertHTML('');
         container.insertAdjacentHTML('beforeend', blockHtml);
     });
 });
