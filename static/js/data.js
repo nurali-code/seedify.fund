@@ -133,7 +133,7 @@ const data = [
         link: 'kokodi-private',
 
         /// Card backgorund
-        backgorund: 'kododi-bg.jpg',
+        backgorund: 'kokodi-bg.jpg',
 
         // Social Media
         website: '#',
@@ -172,7 +172,7 @@ const data = [
         link: 'kokodi',
 
         // Card backgorund
-        backgorund: 'kododi-bg.jpg',
+        backgorund: 'kokodi-bg.jpg',
 
         // Social Media
         website: '#',

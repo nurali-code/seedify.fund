@@ -36,7 +36,7 @@ function createBlock(data) {
               <div class="style_bannerContainer__fsR7K">
                   <div class="style_subBannerContainer__zbJS8">
                       <div class="style_imageContainer__zlhyQ">
-                          <img src="../../static/media/${data.image}" alt="Project thumbnail" height="128" width="128">
+                          <img src="static/media/${data.image}" alt="Project thumbnail" height="128" width="128">
                       </div>
                       <div class="style_statusContainer__ZGW8P">
                         <div class="style_subStatusContainer__2pWHE">${statusBlocks}</div></div>
@@ -57,7 +57,7 @@ function createBlock(data) {
                   <div class="style_tokenPriceContainer__oxmP0">
                       <p class="style_tokenPriceText__oLQPH">Targeted Raise</p>
                       <div class="style_tokenPriceSubContainer__pr8_T">
-                          <img alt="token" src="../../static/media/${data.token}" width="30" height="30" loading="lazy">
+                          <img alt="token" src="static/media/${data.token}" width="30" height="30" loading="lazy">
                           <div class="style_valueContainer__e_rMI" style="cursor: pointer;">
                           <span>${data.targetedRaise}</span><span>${data.targetedRaiseCurrency}</span></div> 
                       </div>
