@@ -1,6 +1,7 @@
 function createBlock(data) {
     let statusBlocks = '';
     let linkBlock = '';
+    let imageLink = '';
 
     if (data.live === 'on') {
         statusBlocks += `
@@ -13,8 +14,11 @@ function createBlock(data) {
             </div>
         </div>`;
         linkBlock = `<a href="igo/${data.link}" type="button" class="style_button__fU377 style_active__Ssu_U style_lg__gcLqO"><span>Register</span></a>`;
+        imageLink = `<div class="style_imageContainer__zlhyQ"><a href="igo/${data.link}"><img src="static/media/${data.image}" alt="Project thumbnail" height="128" width="128"></a></div>`;
+        
     } else {
         linkBlock = `<button type="button" class="style_button__fU377 style_active__Ssu_U style_lg__gcLqO" disabled=""><span>Coming Soon</span></button>`;
+        imageLink = `<div class="style_imageContainer__zlhyQ"><img src="static/media/${data.image}" alt="Project thumbnail" height="128" width="128"></div>`;
     }
 
     if (data.upcoming === 'on') {
@@ -34,10 +38,7 @@ function createBlock(data) {
       <div class="style_container__wNVfO">
           <div class="style_linkContainer__U4pSv">
               <div class="style_bannerContainer__fsR7K">
-                  <div class="style_subBannerContainer__zbJS8">
-                      <div class="style_imageContainer__zlhyQ">
-                          <img src="static/media/${data.image}" alt="Project thumbnail" height="128" width="128">
-                      </div>
+                  <div class="style_subBannerContainer__zbJS8"> ${imageLink}
                       <div class="style_statusContainer__ZGW8P">
                         <div class="style_subStatusContainer__2pWHE">${statusBlocks}</div></div>
                     </div>
