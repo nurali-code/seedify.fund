@@ -14,11 +14,11 @@ function createBlock(data) {
             </div>
         </div>`;
         linkBlock = `<a href="igo/${data.link}" type="button" class="style_button__fU377 style_active__Ssu_U style_lg__gcLqO"><span>Register</span></a>`;
-        imageLink = `<div class="style_imageContainer__zlhyQ"><a href="igo/${data.link}"><img src="static/media/${data.image}" alt="Project thumbnail" height="128" width="128"></a></div>`;
+        imageLink = `<div class="style_imageContainer__zlhyQ"><a href="igo/${data.link}"><img src="${data.image}" alt="Project thumbnail" height="128" width="128"></a></div>`;
         
     } else {
         linkBlock = `<button type="button" class="style_button__fU377 style_active__Ssu_U style_lg__gcLqO" disabled=""><span>Coming Soon</span></button>`;
-        imageLink = `<div class="style_imageContainer__zlhyQ"><img src="static/media/${data.image}" alt="Project thumbnail" height="128" width="128"></div>`;
+        imageLink = `<div class="style_imageContainer__zlhyQ"><img src="${data.image}" alt="Project thumbnail" height="128" width="128"></div>`;
     }
 
     if (data.upcoming === 'on') {

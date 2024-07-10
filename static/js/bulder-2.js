@@ -1,10 +1,9 @@
 function innerBlock(data) {
     var backgorund = document.getElementById('tBackgorund');
-    backgorund.setAttribute('src', '../../static/media/' + data.backgorund)
+    backgorund.setAttribute('src', data.backgorund)
     document.getElementById('cur_1').innerHTML = data.cur_1;
     document.getElementById('cur_price').innerHTML = data.cur_price;
     document.getElementById('total').innerHTML = data.total;
-
     let socialMedia = '';
     if (data.website !== '#') {
         socialMedia += `
@@ -96,7 +95,7 @@ function tokenInformation(data) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const parts = window.location.href.split('/'); 
+    const parts = window.location.href.split('/');
     const dataLink = parts.filter(Boolean).pop();
     const indX = data.findIndex(item => item.link === dataLink);
     console.log(indX);
