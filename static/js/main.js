@@ -442,7 +442,7 @@ let ht_h = document.querySelectorAll(".ht_h");
 let ht_m = document.querySelectorAll(".ht_m");
 let ht_s = document.querySelectorAll(".ht_s");
 
-let time = 4 * 60 * 60 * 1000; // 4 часа в миллисекундах
+let time = 30 * 60 * 1000; // 30 минту в миллисекундах
 let prBar = setInterval(progresBar, Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000);
 
 function progresBar() {
