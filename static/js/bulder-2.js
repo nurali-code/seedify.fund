@@ -1,4 +1,5 @@
 function innerBlock(data) {
+    document.title = data.title;
     var backgorund = document.getElementById('tBackgorund');
     backgorund.setAttribute('src', data.backgorund)
     document.getElementById('cur_1').innerHTML = data.cur_1;
@@ -98,7 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const parts = window.location.href.split('/');
     const dataLink = parts.filter(Boolean).pop();
     const indX = data.findIndex(item => item.link === dataLink);
-    console.log(indX);
 
 
     const container = document.getElementById('innerBlock');
